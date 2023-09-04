@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/public/static/css/main.d2bc5d8e.css",
+    "main.js": "/public/static/js/main.15c38828.js",
+    "static/js/787.d029300e.chunk.js": "/public/static/js/787.d029300e.chunk.js",
+    "static/media/dashboard.svg": "/public/static/media/dashboard.cf049664d757e70bc665a7c39e36da1c.svg",
+    "static/media/content.svg": "/public/static/media/content.d6c2b824de430a379179bbbb868ae911.svg",
+    "static/media/agileApLogoMart2.svg": "/public/static/media/agileApLogoMart2.a9085dac99c7d26a90fe58763110d98e.svg",
+    "static/media/agileApLogoMark1.svg": "/public/static/media/agileApLogoMark1.41fe6acaebcaa73f216632bd26b6f30e.svg",
+    "static/media/StandardLogo.svg": "/public/static/media/StandardLogo.0029a5cd177552e5361f50754f858ef6.svg",
+    "static/media/empty-wallet-time.svg": "/public/static/media/empty-wallet-time.15e6b490d97eb2dadbe4dd1ac525d476.svg",
+    "index.html": "/public/index.html",
+    "static/media/cards.svg": "/public/static/media/cards.3f4282e7bf3378285591b471791e197a.svg",
+    "static/media/document-text.svg": "/public/static/media/document-text.40a9f362fa0bc5fcc623ef198056d3b7.svg",
+    "static/media/close-circle.svg": "/public/static/media/close-circle.c47bc7e2f5e0424d522ce898f3670681.svg",
+    "static/media/tick-circle.svg": "/public/static/media/tick-circle.0ec3e03f9643fc7e35f28d23835ca8eb.svg",
+    "main.d2bc5d8e.css.map": "/public/static/css/main.d2bc5d8e.css.map",
+    "main.15c38828.js.map": "/public/static/js/main.15c38828.js.map",
+    "787.d029300e.chunk.js.map": "/public/static/js/787.d029300e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2bc5d8e.css",
+    "static/js/main.15c38828.js"
+  ]
+}
