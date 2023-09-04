@@ -13,8 +13,9 @@ function MainRoute() {
         window.history.go(-1);
     };
 
+    const [baseName, setBaseName] = useState(process.env.REACT_APP_BASENAME ? process.env.REACT_APP_BASENAME : "");
     return (
-        <Router >
+        <Router basename={baseName}>
             <Routes>
                 <Route element={<Layout />}>
                     <Route path="/" element={<Suspense fallback={<div>Loading...</div>}><Home /></Suspense>} />

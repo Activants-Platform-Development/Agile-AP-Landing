@@ -29,13 +29,14 @@ const Navbar: React.FC<NavbarProps> = () => {
     };
 
     const handleClick = () => {
-        window.location.href = "agileap.com";
+        window.location.href = "https://agileap.com";
     };
+    const [baseName, setBaseName] = useState(process.env.REACT_APP_BASENAME ? process.env.REACT_APP_BASENAME : "");
 
     return (
         <nav className="bg-white flex sticky w-full z-20 top-0 left-0 justify-center pb-4">
             <div className=" flex flex-wrap items-center justify-between py-4  w-lgMain">
-                <a href="/" onClick={() => handleChangeSection("#home")} className="flex items-center">
+                <a href={baseName} onClick={() => handleChangeSection("#home")} className="flex items-center">
                     <AgileAppLogo width={147} />
                 </a>
                 <button
