@@ -28,10 +28,12 @@ const Navbar: React.FC<NavbarProps> = () => {
         }
     };
 
-    const handleClick = () => {
-        window.location.href = "https://agileap.com";
-    };
     const [baseName, setBaseName] = useState(process.env.REACT_APP_BASENAME ? process.env.REACT_APP_BASENAME : "");
+    const [appUrl, setAppUrl] = useState(process.env.REACT_APP_URL ? process.env.REACT_APP_URL : "");
+    
+    const handleClick = () => {
+        window.location.href = appUrl;
+    };
 
     return (
         <nav className="bg-white flex sticky w-full z-20 top-0 left-0 justify-center pb-4">
@@ -118,7 +120,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                         }}
                         className="font-medium text-white bg-primary rounded-lg hover:ring-0 hover:outline-none hover:bg-opacity-70 active:bg-opacity-50 font-medium rounded-xl text-sm px-4 py-2 text-center mr-3 md:mr-0 "
                     >
-                        Try It Now
+                        Login Now
                     </button>
                 </div>
             </div>
