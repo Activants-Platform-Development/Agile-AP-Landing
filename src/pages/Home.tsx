@@ -22,8 +22,8 @@ export default function Home() {
             <section className='flex flex-col w-full py-12 w-lgMain lg:pt-28 sm:pt-12 space-y-12 items-center' id="home">
                 <Mark1 className="absolute w-44 lg:w-1/5 top-20 right-0" />
                 <div className='flex flex-col w-lgMain text-center gap-6 w-lgMain z-10'>
-                    <label className='block text-center font-black leading-tight text-4xl lg:text-7xl'>Elevate Your Bussiness Efficency</label>
-                    <label className='text-md  font-normal text-grayLight '>Achieve Accounts Payable Excellence with Optomize Invoice Processing</label>
+                    <label className='block text-center font-black leading-tight text-4xl lg:text-7xl'>Elevate Your Business Efficiency</label>
+                    <label className='text-md  font-normal text-grayLight '>Achieve Accounts Payable Excellence with Optimize Invoice Processing</label>
                     <div>
                         <button onClick={() => { handleClick(); }} type="button" className="font-medium text-white bg-primary rounded-lg focus:ring-0 focus:outline-none hover:bg-opacity-70 active:bg-opacity-50 font-medium rounded-xl text-sm px-4 py-2 text-center mr-3 md:mr-0 ">Request For Demo</button>
                     </div>
@@ -37,7 +37,7 @@ export default function Home() {
                         Easy, Simple, Affordable
                     </label>
                     <p className='font-normal text-md lg:text-lg text-grayLight'>
-                        Our platform helps your bussiness in managing expenses.These are some of the reasons why you should use our platform in managing bussiness finances.
+                        Our platform helps your business in managing expenses.These are some of the reasons why you should use our platform in managing business finances.
                     </p>
                 </div>
                 <div className='flex lg:flex-row xs:flex-col md:flex-col flex-col items-center gap-y-8 lg:items-start w-full gap-x-32 '>
@@ -68,7 +68,7 @@ export default function Home() {
                                     Clear payment history
                                 </label>
                                 <label className='text-sm font-normal text-secondary'>
-                                    Clear payment history helps you to track your bussiness expenses on specific dates.
+                                    Clear payment history helps you to track your business expenses on specific dates.
                                 </label>
                             </div>
                         </div>
@@ -205,7 +205,7 @@ export default function Home() {
                                         <div className='flex items-start'>
                                             <TickCircle className={"w-6"} />
                                         </div>
-                                        <label className='font-medium text-md lg:text-lg leading-1'>Analyze your bussiness cost easily with group transaction thorugh tagging feature.</label>
+                                        <label className='font-medium text-md lg:text-lg leading-1'>Analyze your business cost easily with group transaction thorugh tagging feature.</label>
                                     </div>
                                     <div className='flex space-x-2'>
                                         <div className='flex items-start'>
@@ -319,7 +319,7 @@ export default function Home() {
             <section className='lg:grid lg:grid-cols-2 text-white bg-darkBlue w-full justify-center pt-12 lg:pl-24 pl-12 md:pl-16 space-y-12 gap-x-32 items-center'>
                 <div className='flex md:w-3/4 gap-y-4 flex-col'>
                     <label className='font-black text-3xl lg:text-4xl block w-9/12'>Start your journey with us now</label>
-                    <label className='font-normal text-sm text-secondary'>Are you ready to make your bussiness more organized?</label>
+                    <label className='font-normal text-sm text-secondary'>Are you ready to make your business more organized?</label>
                     <div>
                         <button onClick={() => { handleClick(); }} type="button" className="font-medium text-white bg-primary rounded-lg hover:ring-0 hover:outline-none hover:bg-opacity-90 active:bg-opacity-70 font-medium rounded-xl text-sm px-4 py-2 text-center mr-3 md:mr-0 ">Get a Free Demo</button>
                     </div>
