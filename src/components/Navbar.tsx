@@ -30,7 +30,7 @@ const Navbar: React.FC<NavbarProps> = () => {
 
     const [baseName, setBaseName] = useState(process.env.REACT_APP_BASENAME ? process.env.REACT_APP_BASENAME : "");
     const [appUrl, setAppUrl] = useState(process.env.REACT_APP_URL ? process.env.REACT_APP_URL : "");
-    
+
     const handleClick = () => {
         window.location.href = appUrl;
     };
@@ -105,9 +105,12 @@ const Navbar: React.FC<NavbarProps> = () => {
                                 About Us
                             </a>
                         </li>
-                        <li className="lg:hidden bg-primary w-fit rounded-xl text-white md:hidden px-4 lg:px-0 md:px-0 md:flex">
-                            <a href="www.agileap.com" className="block py-2 rounded cursor-pointer">
-                                Try It Now
+                        <li className="lg:hidden bg-primary w-fit rounded-xl text-white md:hidden px-4 lg:px-0 md:px-0 md:flex"
+                            onClick={() => {
+                                handleClick();
+                            }}>
+                            <a className="block py-2 rounded cursor-pointer">
+                                Login Now
                             </a>
                         </li>
                     </ul>
