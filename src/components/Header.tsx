@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 // import AgileAppLogo from "../assets/svg/agileAp-Logo-Standard1.svg";
 import { AgileAppLogo } from "../assets/svg"
+import { useLocation } from "react-router-dom";
 
 interface NavbarProps {
     currentPage?: string;
@@ -9,6 +10,7 @@ interface NavbarProps {
 const Header: React.FC<NavbarProps> = ({
     currentPage = "Home",
 }) => {
+    const location = useLocation();
     const [currentSection, setCurrentSection] = useState("");
 
     const handleOpenSideBar = () => {
@@ -17,6 +19,10 @@ const Header: React.FC<NavbarProps> = ({
     };
 
     const handleChangeSection = (section: string) => {
+        console.log("location", location)
+        if(location.pathname != "/"){
+            window.location.href = baseName
+        }
         setCurrentSection(section);
         scrollToSection(section);
         const menu: any = document.querySelector("#navbar-default");
@@ -42,7 +48,7 @@ const Header: React.FC<NavbarProps> = ({
     return (
         <nav className="bg-white flex sticky w-full z-20 top-0 left-0 justify-center ">
             <div className=" flex flex-wrap items-center justify-between py-4  w-lgMain">
-                <a href={baseName} onClick={() => handleChangeSection("#home")} className="flex items-center">
+                <a onClick={() => handleChangeSection("#home")} className="flex items-center cursor-pointer">
                     <AgileAppLogo width={147} />
                 </a>
                 <button
@@ -74,6 +80,7 @@ const Header: React.FC<NavbarProps> = ({
                     id="navbar-default"
                 >
                     <ul className="font-medium text-secondary text-sm flex flex-col p-4 gap-y-2  md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row  md:mt-0 md:border-0 md:bg-white lg:gap-10">
+                        {location.pathname == "/" && (<>
                         <li
                             className={`${currentSection === "#home" ? "bg-primary text-white" : "hover:bg-gray-10"
                                 } rounded px-2 md:border-0 border-b border-gray-200 cursor-pointer`}
@@ -109,6 +116,7 @@ const Header: React.FC<NavbarProps> = ({
                                 About Us
                             </a>
                         </li>
+                        </>)}
                         <li className="lg:hidden bg-primary w-fit rounded-xl text-white md:hidden px-4 lg:px-0 md:px-0 md:flex"
                             onClick={() => {
                                 handleClick();
