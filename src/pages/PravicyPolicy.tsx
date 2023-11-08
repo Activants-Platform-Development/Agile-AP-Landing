@@ -4,8 +4,8 @@ import { TextValue } from "../translations"
 export const PrivacyPolicy = () => {
 
     const mainContent = (
-        <div className={`w-full`}>
-            <div className={`px-[5%] lg:px-[13%] text-[14px] md:text-[15px] lg:text-[15px] flex flex-col py-8 gap-y-6 leading-8`}>
+        <div className={`w-full justify-center flex`}>
+            <div className={` w-lgMain text-[14px] md:text-[15px] lg:text-[15px] flex flex-col py-8 gap-y-6 leading-8`}>
                 <div className="font-bold text-3xl text-theme_color">
                     {TextValue("Privacy Notice")}
                 </div>

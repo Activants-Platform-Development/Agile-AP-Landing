@@ -21,7 +21,7 @@ function MainRoute() {
             <Routes>
                 <Route element={<Layout />}>
                     <Route path="/" element={<Suspense fallback={<div>Loading...</div>}><Home /></Suspense>} />
-                    <Route path="/term-con" element={<Suspense fallback={<div>Loading...</div>}><TermAndConditions /></Suspense>} />
+                    <Route path="/terms-conditions" element={<Suspense fallback={<div>Loading...</div>}><TermAndConditions /></Suspense>} />
                     <Route path="/privacy-policy" element={<Suspense fallback={<div>Loading...</div>}><PrivacyPolicy /></Suspense>} />
                 </Route>
             </Routes>

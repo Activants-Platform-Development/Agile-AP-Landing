@@ -8,7 +8,7 @@ function Layout() {
     return (
         <div className="flex flex-col">
             <Navbar />
-            <main className="flex w-full bg-white flex-col items-center justify-between">
+            <main className="flex w-full bg-white flex-col items-center ">
                 <Outlet />
                 <Footer />
             </main>

@@ -29,7 +29,7 @@ export default function Footer() {
                     <label>© 2023 Activants PTE LTD. - All Rights Reserved</label>
                 </div>
                 <div className='flex lg:space-x-8 md:space-x-4 space-x-2 justify-between'>
-                    <label className='cursor-pointer hover:font-bold hover:text-black active:font-bold active:text-black' onClick={() => navigate("/term-con")}>Terms of use</label>
+                    <label className='cursor-pointer hover:font-bold hover:text-black active:font-bold active:text-black' onClick={() => navigate("/terms-conditions")}>Terms of use</label>
                     <label className='cursor-pointer hover:font-bold hover:text-black active:font-bold active:text-black' onClick={() => navigate("/privacy-policy")}>Privacy policy</label>
                 </div>
             </div>
