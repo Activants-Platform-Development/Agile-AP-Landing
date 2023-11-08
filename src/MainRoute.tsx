@@ -4,10 +4,10 @@ import {
     Navigate
 } from 'react-router-dom';
 import { Routes, Route } from "react-router-dom";
-import Layout from "./Layout";
 import Home from "./pages/Home";
 import { PrivacyPolicy } from "./pages/PravicyPolicy";
 import { TermAndConditions } from "./pages/TermAndConditions";
+import Layout from "./layouts/Layout";
 
 function MainRoute() {
 
@@ -19,11 +19,11 @@ function MainRoute() {
     return (
         <Router basename={baseName}>
             <Routes>
-                <Route element={<Layout />}>
-                    <Route path="/" element={<Suspense fallback={<div>Loading...</div>}><Home /></Suspense>} />
-                    <Route path="/terms-conditions" element={<Suspense fallback={<div>Loading...</div>}><TermAndConditions /></Suspense>} />
-                    <Route path="/privacy-policy" element={<Suspense fallback={<div>Loading...</div>}><PrivacyPolicy /></Suspense>} />
-                </Route>
+                {/* <Route element={<Layout />}> */}
+                <Route path="/" element={<Suspense fallback={<div>Loading...</div>}><Home /></Suspense>} />
+                <Route path="/terms-conditions" element={<Suspense fallback={<div>Loading...</div>}><TermAndConditions /></Suspense>} />
+                <Route path="/privacy-policy" element={<Suspense fallback={<div>Loading...</div>}><PrivacyPolicy /></Suspense>} />
+                {/* </Route> */}
             </Routes>
         </Router>
     );

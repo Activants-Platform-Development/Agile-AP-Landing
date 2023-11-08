@@ -2,6 +2,7 @@ import Footer from '../components/Footer';
 import { DashboardLogo, EmptyWallet, DocumentText, TickCircle, CrossCircle, Cards, Content, Mark1, Mark2 } from "../assets/svg";
 import { useEffect, useState } from 'react';
 import ToogleTab from '../components/ToogleTab';
+import { HomeLayout } from '../layouts/HomeLayout';
 
 
 export default function Home() {
@@ -17,7 +18,7 @@ export default function Home() {
         window.location.href = mailtoLink;
     };
 
-    return (
+    const mainContentDesktop = (
         <div className='flex flex-col w-full items-center '>
             <section className='flex flex-col w-full py-12 w-lgMain lg:pt-28 sm:pt-12 space-y-12 items-center' id="home">
                 <Mark1 className="absolute w-44 lg:w-1/5 top-20 right-0" />
@@ -328,8 +329,11 @@ export default function Home() {
                     <Content className=" mb-0 h-fit max-h-fit min-w-[100%]" />
                 </div>
             </section>
-            {/* <Footer /> */}
         </div>
+    )
+
+    return (
+        <HomeLayout showHeader={true} showFooter={true} mainContent={mainContentDesktop} currentPage="Home" />
     )
 }
 
