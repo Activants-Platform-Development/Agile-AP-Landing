@@ -16,7 +16,7 @@ export const PrivacyPolicy = () => {
                     <ul className=" ml-6">
                         <li>a. {'Activants refers to Activants Private Limited.'}</li>
                         <li>b. {'We/our refers to Activants'}</li>
-                        <li>c. {'Platform refers to zyp.world and its related mobile sites and applications of which the IP belongs to Activants.'}</li>
+                        <li>c. {'Platform refers to agileAp and its related mobile sites and applications of which the IP belongs to Activants.'}</li>
                         <li>d. {'Personal information refers to information that identifies you as an individual, or information that we can combine with readily available information to identify you as an individual.'}</li>
                     </ul>
                 </div>
@@ -25,7 +25,7 @@ export const PrivacyPolicy = () => {
                         {TextValue("RESPECT")}
                     </p>
                     <p>
-                        {TextValue("Activants respects your privacy. This privacy notice describes the personal information we collect from you and how we use that information. This privacy notice covers both our collection and use of information when you use the Platform. This privacy notice does not apply to other Internet sites accessed via the Platform. By submitting your personal information to the Platform, you consent to Activants' use and disclosure of your personal information as set forth in this privacy notice. If you do not agree with the terms of this privacy notice, please do not submit any personal information to the Platform. ")}<span className="italic text-darkOrange">{TextValue("customer.service@zyp.world.")}</span>
+                        {TextValue("Activants respects your privacy. This privacy notice describes the personal information we collect from you and how we use that information. This privacy notice covers both our collection and use of information when you use the Platform. This privacy notice does not apply to other Internet sites accessed via the Platform. By submitting your personal information to the Platform, you consent to Activants' use and disclosure of your personal information as set forth in this privacy notice. If you do not agree with the terms of this privacy notice, please do not submit any personal information to the Platform. ")}<span className="italic text-darkOrange">{TextValue("customer.service@agileap.world.")}</span>
                     </p>
                 </div>
                 <p>
@@ -53,7 +53,7 @@ export const PrivacyPolicy = () => {
 
                 </p>
                 <p>
-                    {TextValue("Refer a Friend. If you choose to use our referral service to tell a friend about our site, we will ask you for your friend's name and email address. We will automatically send your friend a one-time email inviting him or her to visit the site. Activants stores this information for the purpose of sending this one- time email and tracking the success of our referral program. Your friend may contact us at customer.service@zyp.world to request that we remove this information from our database; however, if someone else subsequently refers to the same friend, their email address may be stored again.")}
+                    {TextValue("Refer a Friend. If you choose to use our referral service to tell a friend about our site, we will ask you for your friend's name and email address. We will automatically send your friend a one-time email inviting him or her to visit the site. Activants stores this information for the purpose of sending this one- time email and tracking the success of our referral program. Your friend may contact us at customer.service@agileap to request that we remove this information from our database; however, if someone else subsequently refers to the same friend, their email address may be stored again.")}
 
                 </p>
                 <div className={``}>
@@ -111,7 +111,7 @@ export const PrivacyPolicy = () => {
                 </div>
                 <p>
                     {TextValue("To request for deletion, disclosure and update of personal data, you may also write in to ")}
-                    <span className="text-darkOrange italic font-semibold">{TextValue("customer.service@zyp.world.")}</span>
+                    <span className="text-darkOrange italic font-semibold">{TextValue("customer.service@agileap.")}</span>
                 </p>
                 <div className={``}>
                     <p className={`text-darkPink font-bold text-xl`}>
@@ -137,7 +137,7 @@ export const PrivacyPolicy = () => {
                         {TextValue("If you have questions about our handling of personal information or questions regarding the privacy policy, you may write to us at ")}
                     </p>
                     <p>
-                        <span className="text-darkOrange italic font-bold">{TextValue("customer.service@zyp.world.")}</span>
+                        <span className="text-darkOrange italic font-bold">{TextValue("customer.service@agileap.")}</span>
                     </p>
                 </div>
             </div>
