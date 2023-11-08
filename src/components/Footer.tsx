@@ -1,10 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import { AgileAppLogo } from "../assets/svg";
 
 export default function Footer() {
     const emailAddress = 'contact@agileap.com';
     const subject = 'Inquiry About AgileAP';
     const body = 'Hello,\n\nI am reaching out to inquire about your accounts payable services. Our company, [Your Company Name], is interested in streamlining our accounts payable processes and improving efficiency in managing financial transactions.\n\nWe have reviewed your website and are impressed by the range of services you offer in this area. We are particularly interested in learning more about:\n\n- Invoice processing and automation\n- Vendor management and communication\n- Integration with accounting software\n- Security measures to protect sensitive financial data\n\nCould you please provide more details about your service packages, pricing, and any customization options available? Additionally, we would appreciate any case studies or success stories showcasing the results your clients have achieved by using your accounts payable solutions.\n\nPlease reach out to us at your earliest convenience to discuss how your services align with our needs. You can reply directly to this email or contact us at [Your Phone Number].\n\nThank you for your time, and we look forward to the opportunity to explore a potential collaboration.\n\nBest regards,\n[Your Name]\n[Your Title]\n[Your Company Name]\n[Your Contact Information';
-
+    const navigate = useNavigate();
     const handleClick = () => {
         const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         window.location.href = mailtoLink;
@@ -28,8 +29,8 @@ export default function Footer() {
                     <label>© 2023 Activants PTE LTD. - All Rights Reserved</label>
                 </div>
                 <div className='flex lg:space-x-8 md:space-x-4 space-x-2 justify-between'>
-                    <label className='cursor-pointer hover:font-bold hover:text-black active:font-bold active:text-black' onClick={()=>{window.location.href = "https://activants.com/";}}>Terms of use</label>
-                    <label className='cursor-pointer hover:font-bold hover:text-black active:font-bold active:text-black' onClick={()=>{window.location.href = "https://activants.com/";}}>Privacy policy</label>
+                    <label className='cursor-pointer hover:font-bold hover:text-black active:font-bold active:text-black' onClick={() => navigate("/terms-conditions")}>Terms of use</label>
+                    <label className='cursor-pointer hover:font-bold hover:text-black active:font-bold active:text-black' onClick={() => navigate("/privacy-policy")}>Privacy policy</label>
                 </div>
             </div>
         </section>

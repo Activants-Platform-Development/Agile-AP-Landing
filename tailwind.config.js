@@ -25,7 +25,10 @@ module.exports = {
         primary: '#F15A29',
         secondary: '#596780',
         grayLight: '#00000099',
-        darkBlue: '#0C1C37'
+        darkBlue: '#0C1C37',
+        theme_color: "#3C08A0",
+        darkPink: "#EC1E79",
+        darkOrange: "#F7931E"
       },
       width: {
         lgMain: '85%'
