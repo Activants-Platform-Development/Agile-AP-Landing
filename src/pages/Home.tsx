@@ -328,7 +328,7 @@ export default function Home() {
                     <Content className=" mb-0 h-fit max-h-fit min-w-[100%]" />
                 </div>
             </section>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }
