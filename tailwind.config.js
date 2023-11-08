@@ -28,7 +28,8 @@ module.exports = {
         darkBlue: '#0C1C37',
         theme_color: "#3C08A0",
         darkPink: "#EC1E79",
-        darkOrange: "#F7931E"
+        darkOrange: "#F7931E",
+        lightBlue: '#6DB2E3',
       },
       width: {
         lgMain: '85%'
