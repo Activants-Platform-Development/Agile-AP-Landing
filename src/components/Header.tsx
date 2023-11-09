@@ -20,7 +20,7 @@ const Header: React.FC<NavbarProps> = ({
 
     const handleChangeSection = (section: string) => {
         console.log("location", location)
-        if(location.pathname != "/"){
+        if (location.pathname != "/") {
             window.location.href = baseName
         }
         setCurrentSection(section);
@@ -81,41 +81,41 @@ const Header: React.FC<NavbarProps> = ({
                 >
                     <ul className="font-medium text-secondary text-sm flex flex-col p-4 gap-y-2  md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row  md:mt-0 md:border-0 md:bg-white lg:gap-10">
                         {location.pathname == "/" && (<>
-                        <li
-                            className={`${currentSection === "#home" ? "bg-primary text-white" : "hover:bg-gray-10"
-                                } rounded px-2 md:border-0 border-b border-gray-200 cursor-pointer`}
-                        >
-                            <a onClick={() => handleChangeSection("#home")} className="block py-2" aria-current="page">
-                                How It Works
-                            </a>
-                        </li>
-                        <li
-                            className={`${currentSection === "#ourwork" ? "bg-primary text-white" : "hover:bg-gray-100"
-                                } flex rounded px-2 md:border-0 border-b border-gray-200 cursor-pointer`}
-                        >
-                            <a onClick={() => handleChangeSection("#ourwork")} className="block py-2 rounded ">
-                                Our Work
-                            </a>
-                        </li>
-                        {/* <li onClick={() => handleChangeSection("#services")} className={`${currentSection === '#services' ? 'bg-primary text-white' : 'hover:bg-gray-100'} rounded px-2 md:border-0 border-b border-gray-200`}>
+                            <li
+                                className={`${currentSection === "#home" ? "bg-primary text-white" : "hover:bg-gray-10"
+                                    } rounded px-2 md:border-0 border-b border-gray-200 cursor-pointer`}
+                            >
+                                <a onClick={() => handleChangeSection("#home")} className="block py-2" aria-current="page">
+                                    How It Works
+                                </a>
+                            </li>
+                            <li
+                                className={`${currentSection === "#ourwork" ? "bg-primary text-white" : "hover:bg-gray-100"
+                                    }  rounded px-2 md:border-0 border-b border-gray-200 cursor-pointer`}
+                            >
+                                <a onClick={() => handleChangeSection("#ourwork")} className="block py-2 rounded ">
+                                    Our Work
+                                </a>
+                            </li>
+                            {/* <li onClick={() => handleChangeSection("#services")} className={`${currentSection === '#services' ? 'bg-primary text-white' : 'hover:bg-gray-100'} rounded px-2 md:border-0 border-b border-gray-200`}>
                             <a href="#services" className="block py-2 rounded">Services</a>
                         </li> */}
-                        <li
-                            className={`${currentSection === "#pricing" ? "bg-primary text-white" : "hover:bg-gray-100"
-                                } rounded px-2 md:border-0 border-b border-gray-200 cursor-pointer`}
-                        >
-                            <a onClick={() => handleChangeSection("#pricing")} className="block py-2 rounded">
-                                Pricing
-                            </a>
-                        </li>
-                        <li
-                            className={`${currentSection === "#aboutus" ? "bg-primary text-white" : "hover:bg-gray-100"
-                                } px-2 md:border-0 rounded border-b border-gray-200 cursor-pointer`}
-                        >
-                            <a onClick={() => handleChangeSection("#aboutus")} className="block py-2 rounded ">
-                                About Us
-                            </a>
-                        </li>
+                            <li
+                                className={`${currentSection === "#pricing" ? "bg-primary text-white" : "hover:bg-gray-100"
+                                    } rounded px-2 md:border-0 border-b border-gray-200 cursor-pointer`}
+                            >
+                                <a onClick={() => handleChangeSection("#pricing")} className="block py-2 rounded">
+                                    Pricing
+                                </a>
+                            </li>
+                            <li
+                                className={`${currentSection === "#aboutus" ? "bg-primary text-white" : "hover:bg-gray-100"
+                                    } px-2 md:border-0 rounded border-b border-gray-200 cursor-pointer`}
+                            >
+                                <a onClick={() => handleChangeSection("#aboutus")} className="block py-2 rounded ">
+                                    About Us
+                                </a>
+                            </li>
                         </>)}
                         <li className="lg:hidden bg-primary w-fit rounded-xl text-white md:hidden px-4 lg:px-0 md:px-0 md:flex"
                             onClick={() => {
