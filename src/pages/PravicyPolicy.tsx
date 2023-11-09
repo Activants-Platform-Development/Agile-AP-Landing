@@ -113,7 +113,7 @@ export const PrivacyPolicy = () => {
 						{TextValue(
 							"If you have questions about our handling of personal information or questions regarding the privacy policy, you may write to us at "
 						)}
-						<span className="text-lightBlue font-semibold">{TextValue("customerservice@agileap.com")}</span>
+						<span className="text-lightBlue font-semibold">{TextValue("customer.service@agileap.com")}</span>
 					</p>
 				</div>
 				<p className="text-lightBlue italic font-bold">

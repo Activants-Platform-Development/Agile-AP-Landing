@@ -124,7 +124,7 @@ export const TermAndConditions = () => {
 					<p className={`text-darkBlue font-bold text-xl`}>{TextValue("CONTACT INFORMATION")}</p>
 					<p>
 						{TextValue("If you have any questions or concerns about these Terms, please contact us at")}
-						<span className="text-lightBlue font-semibold"> {TextValue("customerservice@agileap.com")}</span>
+						<span className="text-lightBlue font-semibold"> {TextValue("customer.service@agileap.com")}</span>
 					</p>
 				</div>
 				<p className="text-lightBlue italic font-bold">
