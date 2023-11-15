@@ -51,7 +51,7 @@ export const HomeLayout = ({
     return (
         <div className="flex w-full bg-white flex-col items-center justify-between">
             {showHeader && <Header currentPage={currentPage} />}
-            {isLoading === false && <div id={"mainBody"}>{mainContent}</div>}
+            {isLoading === false && mainContent}
             {isLoading == true && (
                 <div className={'w-full grid grid-cols-1 content-center '}>
                     <div className={'flex w-full justify-center '}>
