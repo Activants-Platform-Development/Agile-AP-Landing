@@ -6,7 +6,7 @@ export const PrivacyPolicy = () => {
 	const mainContent = (
 		<div className={`w-full justify-center flex`}>
 			<div className={` w-lgMain text-[14px] md:text-[15px] lg:text-[15px] flex flex-col py-8 gap-y-6 leading-8`}>
-				<div className="font-bold text-3xl text-primary">{TextValue("Privacy Notice")}</div>
+				<div className="font-bold text-3xl text-primary">{TextValue("Privacy Policy")}</div>
 				<div className={``}>
 					<p className={`text-darkBlue font-bold text-xl`}>{TextValue("INTRODUCTION")}</p>
 					<p>

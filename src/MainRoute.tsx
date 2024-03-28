@@ -16,14 +16,22 @@ function MainRoute() {
     };
 
     const [baseName, setBaseName] = useState(process.env.REACT_APP_BASENAME ? process.env.REACT_APP_BASENAME : "");
+    const mainPage = process.env.REACT_APP_MAIN_PAGE ? process.env.REACT_APP_MAIN_PAGE : "";
     return (
         <Router basename={baseName}>
             <Routes>
                 {/* <Route element={<Layout />}> */}
-                <Route path="/" element={<Suspense fallback={<div>Loading...</div>}><Home /></Suspense>} />
-                <Route path="/terms-conditions" element={<Suspense fallback={<div>Loading...</div>}><TermAndConditions /></Suspense>} />
-                <Route path="/privacy-policy" element={<Suspense fallback={<div>Loading...</div>}><PrivacyPolicy /></Suspense>} />
+                {mainPage == "" && (
+                    <Route path="/" element={<Suspense fallback={<div>Loading...</div>}><Home /></Suspense>} />
+                )}
+                {mainPage == "tnc" && (
+                    <Route path="/" element={<Suspense fallback={<div>Loading...</div>}><TermAndConditions /></Suspense>} />
+                )}
+                {mainPage == "pp" && (
+                    <Route path="/" element={<Suspense fallback={<div>Loading...</div>}><PrivacyPolicy /></Suspense>} />
+                )}
                 {/* </Route> */}
+
             </Routes>
         </Router>
     );

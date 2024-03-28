@@ -20,7 +20,9 @@ const Header: React.FC<NavbarProps> = ({
 
     const handleChangeSection = (section: string) => {
         console.log("location", location)
-        if (location.pathname != "/") {
+        if (baseName != "/"){
+            window.location.href = "https://agileap.com"
+        } else if (location.pathname != "/") {
             window.location.href = baseName
         }
         setCurrentSection(section);
@@ -40,7 +42,8 @@ const Header: React.FC<NavbarProps> = ({
 
     const [baseName, setBaseName] = useState(process.env.REACT_APP_BASENAME ? process.env.REACT_APP_BASENAME : "");
     const [appUrl, setAppUrl] = useState(process.env.REACT_APP_URL ? process.env.REACT_APP_URL : "");
-
+    const mainPage = process.env.REACT_APP_MAIN_PAGE ? process.env.REACT_APP_MAIN_PAGE : "";
+    
     const handleClick = () => {
         window.location.href = appUrl;
     };
@@ -80,7 +83,7 @@ const Header: React.FC<NavbarProps> = ({
                     id="navbar-default"
                 >
                     <ul className="font-medium text-secondary text-sm flex flex-col p-4 gap-y-2  md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row  md:mt-0 md:border-0 md:bg-white lg:gap-10">
-                        {location.pathname == "/" && (<>
+                        {location.pathname == "/" && mainPage == "" && (<>
                             <li
                                 className={`${currentSection === "#home" ? "bg-primary text-white" : "hover:bg-gray-10"
                                     } rounded px-2 md:border-0 border-b border-gray-200 cursor-pointer`}
