@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 // import AgileAppLogo from "../assets/svg/agileAp-Logo-Standard1.svg";
 import { AgileAppLogo } from "../assets/svg"
 import { useLocation } from "react-router-dom";
+import MetatagHelmet from "./MetatagHelmet";
 
 interface NavbarProps {
     currentPage?: string;
@@ -51,6 +52,11 @@ const Header: React.FC<NavbarProps> = ({
     return (
         <nav className="bg-white flex sticky w-full z-20 top-0 left-0 justify-center ">
             <div className=" flex flex-wrap items-center justify-between py-4  w-lgMain">
+                <MetatagHelmet
+                    title = 'AgileAP'
+                    description = 'AgileAP by Activants | Accounts Payable System | Elevate Your Business Efficiency | Achieve Accounts Payable Excellence with Optimize Invoice Processing'
+                    url = {window.location.href}
+                />
                 <a onClick={() => handleChangeSection("#home")} className="flex items-center cursor-pointer">
                     <AgileAppLogo width={147} />
                 </a>

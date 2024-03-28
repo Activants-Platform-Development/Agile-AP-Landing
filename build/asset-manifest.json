@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.d2bc5d8e.css",
-    "main.js": "/static/js/main.4aa592c4.js",
+    "main.css": "/static/css/main.39e1b3e5.css",
+    "main.js": "/static/js/main.57b1d344.js",
     "static/js/787.d029300e.chunk.js": "/static/js/787.d029300e.chunk.js",
-    "static/media/dashboard.svg": "/static/media/dashboard.17c3316f3ad6e12ab8ecac3fb7d9b24d.svg",
-    "static/media/content.svg": "/static/media/content.c8ada31c4f11e7f67b9abd244c812e45.svg",
-    "static/media/agileApLogoMart2.svg": "/static/media/agileApLogoMart2.31356c53e8c257b60d2079ec9a1c1e02.svg",
-    "static/media/agileApLogoMark1.svg": "/static/media/agileApLogoMark1.b52ab49be391152761a7ae84445f4360.svg",
+    "static/media/dashboard.svg": "/static/media/dashboard.cf049664d757e70bc665a7c39e36da1c.svg",
+    "static/media/content.svg": "/static/media/content.d6c2b824de430a379179bbbb868ae911.svg",
+    "static/media/agileApLogoMart2.svg": "/static/media/agileApLogoMart2.f7f20581a2b5e1aa91a5c44c6a8ebf3c.svg",
+    "static/media/agileApLogoMark1.svg": "/static/media/agileApLogoMark1.41fe6acaebcaa73f216632bd26b6f30e.svg",
     "static/media/StandardLogo.svg": "/static/media/StandardLogo.0029a5cd177552e5361f50754f858ef6.svg",
-    "static/media/empty-wallet-time.svg": "/static/media/empty-wallet-time.4d4c102c64c97ea76e40e2b17ee562bc.svg",
+    "static/media/AgileAp-Logo-Standard.png": "/static/media/AgileAp-Logo-Standard.5a09ca1a77937911949c.png",
     "index.html": "/index.html",
-    "static/media/cards.svg": "/static/media/cards.4fb84325e6b5e9315094dd754c9df42e.svg",
-    "static/media/document-text.svg": "/static/media/document-text.c574025db9532bc553d19b9e69de1658.svg",
-    "static/media/close-circle.svg": "/static/media/close-circle.9d75d2e20a9fd6f959526d52507d7a6f.svg",
-    "static/media/tick-circle.svg": "/static/media/tick-circle.95bfdea52e01e27ef98a0092881ab3bd.svg",
-    "main.d2bc5d8e.css.map": "/static/css/main.d2bc5d8e.css.map",
-    "main.4aa592c4.js.map": "/static/js/main.4aa592c4.js.map",
+    "static/media/empty-wallet-time.svg": "/static/media/empty-wallet-time.15e6b490d97eb2dadbe4dd1ac525d476.svg",
+    "static/media/cards.svg": "/static/media/cards.3f4282e7bf3378285591b471791e197a.svg",
+    "static/media/document-text.svg": "/static/media/document-text.40a9f362fa0bc5fcc623ef198056d3b7.svg",
+    "static/media/close-circle.svg": "/static/media/close-circle.c47bc7e2f5e0424d522ce898f3670681.svg",
+    "static/media/tick-circle.svg": "/static/media/tick-circle.0ec3e03f9643fc7e35f28d23835ca8eb.svg",
+    "main.39e1b3e5.css.map": "/static/css/main.39e1b3e5.css.map",
+    "main.57b1d344.js.map": "/static/js/main.57b1d344.js.map",
     "787.d029300e.chunk.js.map": "/static/js/787.d029300e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2bc5d8e.css",
-    "static/js/main.4aa592c4.js"
+    "static/css/main.39e1b3e5.css",
+    "static/js/main.57b1d344.js"
   ]
 }
